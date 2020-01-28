@@ -40,7 +40,7 @@ public class TopicosController {
 
 	@Autowired
 	private CursoRepository cursoRepository;
-
+   
 	@GetMapping
 	public Page<TopicoDto> lista(@RequestParam(required = false) String nomeCurso, @RequestParam int pagina,
 			@RequestParam int qtp, @RequestParam String ordenacao) {
